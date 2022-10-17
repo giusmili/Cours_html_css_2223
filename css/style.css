@@ -25,3 +25,14 @@ h3,h4,p,ol{ /* contexte css */
     margin: 0;
     padding: 0;
 }
+
+/* theme css */
+header{
+    background-color: #9333ea;
+}
+header h1{
+    line-height: 4.5rem;/* 45px */
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
