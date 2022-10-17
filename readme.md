@@ -19,3 +19,28 @@ Exemple de structure html :
 </body>
 </html>
 ```
+## Reset css
+```css
+    /* reset css */
+    html{
+    /* 16px mult 100% = 10
+    font-size: 16px; /* for size  rem root em */
+    font-size: 62.5%;
+    }
+    body{
+        font: 1.6rem sans-serif; /* for font  16px */
+        margin: 0;
+    }
+    h1,
+    h2,
+    h3,h4,p,ol{ /* contexte css */
+        margin: 0;
+        padding: 0;
+    }
+    button{
+        background-color: transparent;
+        border: 0;
+        font-size: inherit;
+    }
+
+```
