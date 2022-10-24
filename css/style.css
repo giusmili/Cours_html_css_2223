@@ -10,6 +10,7 @@ sélecteur{
 }
 
 */
+
 html{
     /* 16px mult 100% = 10
     font-size: 16px; /* for size  rem root em */
@@ -30,6 +31,7 @@ h3,h4,p,ol,ul{ /* contexte css */
     margin: 0;
     padding: 0;
     list-style: none; /* supprimer les puce pu les nombres */
+    font-weight: normal;
 }
 img{
     width: 100%;
@@ -48,6 +50,7 @@ header h1{
     text-align: center;
     color: #fff;
     font-weight: normal;
+    text-shadow: -.2rem .2rem 0 #222;
 }
 main{
     /*
@@ -63,14 +66,35 @@ main{
     margin-top: 1rem;
     margin-bottom: 1rem; */
     margin: 2rem auto 5rem;
-    padding: 2rem;
+    padding: 1rem 1rem 0 1rem;
     background-color: #eecdf3fa;
 
 }
-article p{
-    
+/* 
+    Sélectionner les balises parent et enfant.
+    ajouter une couleur d'arrière plan
+    ajouter du remplissage
+    mettre de marge en bas
+*/
+/* article h2, 
+article p, 
+article h3, 
+section h4, 
+section ol{ 
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: .5rem;
+} */
+article p, :is(h2,h3), section, :is(h4,ol){
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: .5rem;
 }
+article h2, section h4, article h3{
+    font-size: x-large;
+}
+
 footer p{
     text-align: center;
-    
+    color: #fff;
 }
